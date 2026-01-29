@@ -1,0 +1,45 @@
+{
+  "name": "opencode-zai-auth",
+  "version": "1.0.0",
+  "description": "Z-AI API key rotation plugin for Opencode - Round-Robin strategy with 6 keys",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "opencode",
+    "zai",
+    "glm",
+    "rotation",
+    "plugin",
+    "auth"
+  ],
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "files": [
+    "dist/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "bun build index.ts --outdir=dist --target=node --format=esm && tsc -p tsconfig.build.json --emitDeclarationOnly",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "@vitest/coverage-v8": "^3.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^3.0.0"
+  },
+  "dependencies": {
+    "@opencode-ai/plugin": "^0.15.30",
+    "zod": "^4.3.6"
+  }
+}

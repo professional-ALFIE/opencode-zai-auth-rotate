@@ -1,0 +1,1 @@
+{"version":3,"file":"rotation.d.ts","sourceRoot":"","sources":["../../../src/plugin/rotation.ts"],"names":[],"mappings":"AAAA,qBAAa,aAAa;IACxB,OAAO,CAAC,QAAQ,CAAW;IAC3B,OAAO,CAAC,gBAAgB,CAAa;;IAMrC,OAAO,CAAC,eAAe;IAcvB,UAAU,IAAI,MAAM,EAAE;IAItB,UAAU,IAAI,MAAM;IASpB,cAAc,IAAI,IAAI;IAGtB,eAAe,CAAC,OAAO,EAAE,MAAM,GAAG,GAAG,GAAG,GAAG;CAI5C"}
