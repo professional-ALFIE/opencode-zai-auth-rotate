@@ -92,22 +92,16 @@ export ZAI_DEBUG=1
 
 ```json
 {
-  "plugin": ["opencode-zai-auth"]
-}
-```
-*(참고: "plugins"가 아닌 단수형 키인 "plugin"을 사용해야 합니다.)*
-
-### 전체 설정 예시
-
-```json
-{
+  "$schema": "https://opencode.ai/config.json",
   "plugin": ["opencode-zai-auth"],
-  "provider": "zai-coding-plan",
-  "model": "glm-4-plus"
+  "model": "zai-coding-plan/glm-4-plus"
 }
 ```
 
-> **중요**: 프로바이더 ID는 `"zai-coding-plan"`입니다. 이 플러그인은 내장된 `zai-coding-plan` 프로바이더를 덮어씁니다.
+> **참고**: 
+> - `"plugins"`가 아닌 단수형 `"plugin"`을 사용해야 합니다.
+> - `model` 형식은 `"provider/model"`입니다 (예: `"zai-coding-plan/glm-4-plus"`).
+> - 이 플러그인은 내장된 `zai-coding-plan` 프로바이더의 인증을 덮어씁니다.
 
 ---
 
