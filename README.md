@@ -94,7 +94,7 @@ export ZAI_DEBUG=1
 {
   "$schema": "https://opencode.ai/config.json",
   "plugin": ["opencode-zai-auth"],
-  "model": "zai-coding-plan/glm-4-plus"
+  "model": "zai-coding-plan/glm-4.7"
 }
 ```
 
